@@ -6,7 +6,7 @@
   "scripts": {
     "test": "testcafe chrome:headless ./tests",
     "test-chrome-3": "testcafe -c 3 chrome:headless ./tests",
-    "test-chrome": "testcafe chrome ./tests -s takeOnFails=true --disable-page-caching",
+    "test-chrome": "testcafe chrome ./tests/bankFeedback.test.js -s takeOnFails=true --disable-page-caching",
     "test-edge": "testcafe edge ./tests",
     "test-mobile": "testcafe chrome:emulation:device=iphone X ./tests",
     "test-multi": "testcafe chrome,edge ./tests"
