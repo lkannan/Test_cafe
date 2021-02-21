@@ -5,14 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test": "testcafe chrome:headless ./tests",
+    "test-chrome-3": "testcafe -c 3 chrome:headless ./tests",
     "test-chrome": "testcafe chrome ./tests -s takeOnFails=true --disable-page-caching",
     "test-edge": "testcafe edge ./tests",
-    "test-mobile": "testcafe chrome:emulation:device=iphone X ./tests"
+    "test-mobile": "testcafe chrome:emulation:device=iphone X ./tests",
+    "test-multi": "testcafe chrome,edge ./tests"
   },
   "author": "Kannan Ramaswamy",
   "license": "ISC",
   "dependencies": {
     "prettier": "^2.2.1",
     "testcafe": "^1.11.0"
+  },
+  "devDependencies": {
+    "xpath-to-css": "^1.0.5"
   }
 }
